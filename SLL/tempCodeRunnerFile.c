@@ -1,4 +1,4 @@
-#include <stdio.h> // do the delete at Index latter
+#include <stdio.h>
 #include <stdlib.h>
 typedef struct stud
 {
@@ -35,27 +35,7 @@ void display()
         printf("%d->", ptr->info);
         ptr = ptr->next_link;
     }
-    printf("NULL\n");
-}
-int deletionAtBeginning()
-{
-    Node *ptr;
-    ptr=start;
-    start=start->next_link;
-    free(ptr);
-}
-int deleteAtEnd()
-{
-    Node *ptr,*q;
-    ptr=start;
-    q=start->next_link;
-    while(q->next_link!=NULL)
-    {
-        ptr->next_link;
-        q->next_link;
-    }
-    ptr->next_link=NULL;
-    free(q);
+    printf("NULL");
 }
 int main()
 {
@@ -78,10 +58,4 @@ int main()
         }
     }
     display();
-    deletionAtBeginning();
-    display();
-    deleteAtEnd();
-    display();
-
-
 }

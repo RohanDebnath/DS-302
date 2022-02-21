@@ -47,6 +47,7 @@ int deque()
         ptr = front;
         val = ptr->data;
         front = front->next;
+         printf("Item dequeue is %d",val);
         return val;
         free(ptr);
     }

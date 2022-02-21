@@ -96,14 +96,15 @@ int main()
     display_forward();
     printf("\n");
     display_Backword();
-    // printf("\nDeleting the beg node\n");
-    // delete_atBeg();
-    // display_forward();
-    // printf("\n");
-    // display_Backword();
+     printf("\nDeleting the beg node\n");
+     delete_atBeg();
+     display_forward();
+     printf("\n");
+     display_Backword();
+       printf("\n");
       printf("Deleting at end node \n");
         delete_atEnd();
-        //display_forward();
-       // printf("\n");
+        display_forward();
+        printf("\n");
         display_Backword();
 }
